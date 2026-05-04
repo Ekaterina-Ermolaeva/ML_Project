@@ -1,0 +1,24 @@
+Model,RMSLE_test,RMSLE_train,MAE,MSE,R2,Cross-Val
+LinearRegression(),0.2171,0.2171,31625.4323,2006163472.0991,0.7385,0.235
+"Ridge(alpha=1000, random_state=42)",0.2462,0.2462,35139.6664,2825423589.2496,0.6316,0.2493
+"Lasso(alpha=0.001, random_state=42)",0.2171,0.2171,31625.4155,2006160912.1457,0.7385,0.235
+"ElasticNet(alpha=1000, l1_ratio=0.1, random_state=42)",0.2712,0.2712,38185.7369,3290983755.4242,0.5709,0.2711
+"KNeighborsRegressor(leaf_size=20, n_neighbors=9, p=1)",0.2095,0.2095,30861.4623,2081655962.7366,0.7286,0.2338
+"DecisionTreeRegressor(min_samples_leaf=4, min_samples_split=10)",0.1918,0.1918,30542.3437,1988786261.6307,0.7407,0.2329
+"RandomForestRegressor(ccp_alpha=0, max_depth=15, max_features='sqrt',
+                      max_samples=0.8, min_samples_split=5, random_state=42)",0.1768,0.1768,28495.8804,1678155204.8295,0.7812,0.2168
+"XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=0.7, device=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             feature_weights=None, gamma=0.1, grow_policy=None,
+             importance_type=None, interaction_constraints=None,
+             learning_rate=0.01, max_bin=None, max_cat_threshold=None,
+             max_cat_to_onehot=None, max_delta_step=None, max_depth=9,
+             max_leaves=None, min_child_weight=5, missing=nan,
+             monotone_constraints=None, multi_strategy=None, n_estimators=400,
+             n_jobs=None, num_parallel_tree=None, ...)",0.1848,0.1848,28678.0488,1688336384.0,0.7799,0.2135
+"CatBoostRegressor(colsample_bylevel=0.9, depth=3, iterations=400, l2_leaf_reg=5, learning_rate=0.1, loss_function='RMSE', random_state=42, random_strength=0.2, subsample=0.9, verbose=False)",0.1909,0.1909,29795.1407,1664360460.9592,0.783,0.2148
+PyTorch_NN_Final,58067.205202248195,54268.15316555373,37357.640625,3371800320.0,0.5604097843170166,58067.205202248195
+VotingEnsemble_5XGB,0.2037,0.2037,30461.3828,1926266240.0,0.7489,0.2161
+StackingEnsemble_5XGB_Ridge,0.196,0.196,29544.1602,1777820288.0,0.7682,0.2141
